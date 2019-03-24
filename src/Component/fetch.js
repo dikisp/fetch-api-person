@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loading from './spinner'
 
 class App extends Component {
   constructor(props){
@@ -26,7 +27,7 @@ componentDidMount(){
     var {isLoaded, items} = this.state;
 
     if (!isLoaded){
-        return <div> Loading...</div>;
+        return <div> <Loading/></div>;
     }
     else{            
     return(
